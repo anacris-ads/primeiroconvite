@@ -1,0 +1,269 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 1. ESTRUTURA GERAL DA PÁGINA */
+html {
+    background-color: #f4eee5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Fotos/Fundo.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    max-width: 390px;
+    height: 100vh;
+    max-height: 720px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #6b5238;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+}
+
+/* CONTAINER DO CONVITE */
+.convite-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 18px 22px 14px 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: transparent !important;
+}
+
+
+
+/* 2. MONOGRAMA NO TOPO ESQUERDO */
+.monograma {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    background-color: #8c6f47;
+    color: #ffffff;
+    font-family: 'Alex Brush', cursive;
+    font-size: 2rem;
+    width: 46px;
+    height: 64px;
+    border-radius: 0 0 22px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* 3. CABEÇALHO DO CONVITE */
+.subtitulo-topo {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: #5c3e1e;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1.5px solid #a88b58;
+    display: inline-block;
+}
+
+/* NOMES DOS NOIVOS */
+.nomes-noivos {
+    font-family: 'Alex Brush', cursive;
+    font-size: clamp(2.7rem, 9.5vw, 3.4rem);
+    color: #6b4e2e;
+    font-weight: normal;
+    line-height: 1.05;
+    margin: 2px 0;
+}
+
+.nomes-noivos .e {
+    font-size: 2.1rem;
+    color: #a88b58;
+    margin: 0 4px;
+}
+
+/* MENSAGEM DE ENTRADA */
+.mensagem {
+    font-size: 0.76rem;
+    font-style: italic;
+    color: #59442e;
+    line-height: 1.4;
+    max-width: 270px;
+    margin: 2px auto;
+}
+
+/* 4. BLOCO DE DATA E ENDEREÇO */
+.bloco-data {
+    width: 100%;
+    margin: 2px 0;
+}
+
+.data-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+.data-box {
+    font-family: 'Cinzel', serif;
+    font-size: 0.82rem;
+    color: #5c3e1e;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-top: 1.5px solid #a88b58;
+    border-bottom: 1.5px solid #a88b58;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+.data-dia {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3.2rem;
+    color: #6b4e2e;
+    line-height: 0.8;
+    padding: 0 4px;
+}
+
+.local-texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #7a5c38;
+    margin-top: 3px;
+}
+
+/* AVISO DA BEBIDA */
+.info-bebida {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #5c3e1e;
+    margin: 2px 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 4px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(168, 139, 88, 0.5);
+    display: inline-block;
+}
+
+/* 5. BOTÕES INTERATIVOS CIRCULARES */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.botoes-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 80px;
+    background: transparent !important;
+}
+
+.botoes-container img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50% !important;
+    border: 2px solid #a88b58 !important;
+    object-fit: cover;
+    background-color: #ffffff !important;
+}
+
+.botoes-container span {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #5c3e1e;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* 6. FRASE FINAL ELEGANTE EM CÁPSULA (LIMPÍSSIMA E LERÁVEL) */
+.rodape-mensagem {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    color: #5c3e1e;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 6px;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1.5px solid #a88b58;
+    display: inline-block;
+}
+
+/* 7. REGRA DE IMPRESSÃO / PDF */
+@media print {
+    @page {
+        margin: 0;
+        size: 360px 640px;
+    }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    html, body {
+        width: 360px !important;
+        height: 640px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    body {
+        background-image: url('Fotos/Fundo.jpg') !important;
+        background-size: 100% 100% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .convite-container {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 15px 20px !important;
+        justify-content: center !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+}
